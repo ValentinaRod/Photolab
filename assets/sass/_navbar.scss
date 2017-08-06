@@ -1,0 +1,30 @@
+*,// no hayan ni anchos ni margin en  en document.
+*,:before  
+*,:after{
+	box-sizing:border-box;
+}
+
+
+.nav-wrapper{
+	position:absolute;
+	top: 30px;
+	width:100%;
+	z-index:999;
+	background-color:none;
+	border:0px;
+	border-radius: 0;
+}
+
+.header__img{
+	position:absolute;
+	top:0px;
+}
+
+.header__img__img{
+	display:inline-block;
+	background-repeat:no-repeat;
+	
+}
+
+
+
