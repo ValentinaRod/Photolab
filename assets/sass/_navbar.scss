@@ -1,38 +1,130 @@
-
-*{
-	border-sizing:border-box;
+body{
+	font-family: 'reboto', sans-serif;
 }
 
 nav{
-	position:absolute;
-	background:none;
-	z-index: 999;
-	border:0;
-	border-radius:none;
+  position: absolute;
+  top: 2em;
+  background-color: transparent;
+  box-shadow: none;
+  z-index: 1;
 }
 
-.fondopaisaje{
-	position:absolute;
-	top: 0;
+nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    
 }
 
-.nav-wrapper ul {
-  text-align: center;
-  li {
-    display: inline;
+nav ul li {
+    display: inline-block;
     float: none;
-  }
+    padding: 0;
+    
 }
 
-ul li a {
-  display: inline-block;
-
+nav ul li a {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+// el header
+//-------------------------------------->
+.header {
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    width: 1349px;
 }
 
-img, legend{
-   background-position: center;
-   background-size: cover;
-   height:100vh;
-   width: 100%;
-  
+.header__caja{
+  max-width: 90%;
+  text-align: center;
 }
+
+.header__caja__titulo{
+  font-weight: 600;
+   text-transform: uppercase;
+    letter-spacing: 6px;
+    
+}
+
+.header__caja__subtitulo {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+    letter-spacing: 3px;
+    
+}
+
+.section, .section_dos, {
+    background-repeat: no-repeat;
+    padding: 45em 0 7em;
+    min-height: 50vh;
+   
+}
+
+//secciones
+
+.section__caja__titulo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.section__caja__texto {
+    letter-spacing: 1px;
+    margin-bottom: 5em;
+    line-height: 2;
+}
+
+.section_dos  {
+    background-image: url(../../docs/img/hand.png);
+    background-color: #fff;
+    background-position: 102% 157%;
+}
+
+.section_tres{
+  text-align: center; 
+}
+
+//footer-------------------->
+
+.seccion_footer {
+    font-weight: 700;
+    padding: 2em 0 0;
+}
+
+.footer__links__link {
+    display: inline-block;
+    border-left: 2px solid #009688;
+}
+
+.footer__links__link:first-child {
+    border: none;
+}
+
+.footer__links__link:first-child a {
+    padding-left: 0;
+}
+
+.footer__links__link a {
+    color: #000;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.footer__links__link a:hover, .footer__links__link a:focus, .footer__links__link a:active, .footer__links__link a:active:focus {
+    text-decoration: underline;
+}
+
+
